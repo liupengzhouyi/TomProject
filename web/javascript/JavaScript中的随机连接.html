@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用随机书实现随机连接</title>
+</head>
+<body>
+
+<p id="demo">链接呢？</p>
+
+
+<script>
+    var r = Math.random();
+    var x = document.getElementById("demo");
+    if (r > 0.5) {
+        x.innerHTML="<a href='https://baidu.com'>访问一个网站</a>";
+    } else {
+        x.innerHTML="<a href='https://bing.com'>访问一个网站</a>";
+    }
+</script>
+
+</body>
+</html>

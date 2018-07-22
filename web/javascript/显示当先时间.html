@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示当前时间</title>
+    <script>
+        function showTime() {
+            document.getElementById("showTime").innerHTML = Date();
+        }
+    </script>
+</head>
+<body>
+<h1>
+    <center>
+        显示当前时间
+    </center>
+</h1>
+<hr>
+<p>
+    <center>
+    <button type="button" onclick="showTime()">Now Time</button>
+</center>
+</p>
+<p id="showTime">
+    <center>
+    当前时间
+</center>
+</p>
+</body>
+</html>

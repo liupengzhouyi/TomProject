@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    <center>
+        点击按钮，显示确认框
+    </center>
+</h1>
+<hr>
+
+<button onclick="UIFunction()">点我</button>
+
+<p id="demo"></p>
+
+<script>
+    function UIFunction() {
+        var x;
+        var r = confirm("按下按钮");
+        if(r==true) {
+            x="你按下了\"确定\"按钮!";
+        } else {
+            x="你按下了\"取消\"按钮!";
+        }
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+
+</body>
+</html>

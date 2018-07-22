@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScrip中的If结构</title>
+
+    <script>
+        function myFunction1() {
+            var x = "";
+            var time = new Date().getHours();
+            if (time < 12) {
+                x = "Good Day!";
+            } else {
+                x = time;
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>
+        <center>
+            如果时间早于 20：00 ，会获得问候“Good day”！
+        </center>
+    </h1>
+<hr>
+
+    <button onclick="myFunction1()">点击这里</button>
+
+
+<p id="demo"></p>
+
+    <p>如果时间早于 20:00，会获得问候 "Good day"。</p>
+    <button onclick="myFunction()">点击这里</button>
+    <p id="demo1"></p>
+    <script>
+        function myFunction(){
+            var x="";
+            var time=new Date().getHours();
+            if (time<20){
+                x="Good day";
+            }
+            document.getElementById("demo1").innerHTML=x;
+        }
+    </script>
+
+</body>
+</html>
