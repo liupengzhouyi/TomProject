@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptFor 循环</title>
+</head>
+<body>
+
+<h1>
+    <center>
+        点击按钮就会循环
+    </center>
+</h1>
+<hr>
+
+<p>
+    <center>
+    <button onclick="Myfunction()">点击</button>
+</center>
+</p>
+
+<p id="demo"></p>
+
+<script>
+    function Myfunction() {
+        var x = "";
+        var i = 0;
+        for (i=0;i<50;i++) {
+            x = "<center>" + x + "这个数字是" + i + "<br>" + "</center>";
+        }
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无限循环计时器</title>
+
+    <script>
+        var c = 0;
+        var t;
+        var time_is_on = 0;
+        function timedCount() {
+            document.getElementById('txt').value = c;
+            c = c + 1;
+            t = setTimeout("timedCount()", 1000);
+        }
+
+        function doTimer() {
+            if(!time_is_on) {
+                time_is_on = 1;
+                timedCount();
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" value="开始计数!" onClick="doTimer()">
+    <input type="text" id="txt">
+</form>
+
+</body>
+</html>

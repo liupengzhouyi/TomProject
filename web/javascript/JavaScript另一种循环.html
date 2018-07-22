@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript另一种循环</title>
+</head>
+<body>
+
+<h1>
+    <center>
+        另一种循环
+    </center>
+</h1>
+<hr>
+
+<p>
+    <center>
+    <button onclick="MyFunction()">点击</button>
+</center>
+</p>
+
+<hr>
+
+<p id="demo"></p>
+
+<script>
+    function MyFunction() {
+        var x;
+        var txt = "";
+        var person = {fname:"Bill",lname:"Gates",age:56};
+        for(x in person) {
+            txt = txt + person[x];
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+
+</body>
+</html>
