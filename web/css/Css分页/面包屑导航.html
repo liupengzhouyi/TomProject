@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面包屑导航栏</title>
+    <style>
+        ul.breadcrumb
+        {
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #f9f4ff;
+            border-radius: 12px;
+        }
+
+        ul.breadcrumb li
+        {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before
+        {
+            padding: 8px;
+            color: black;
+            content: '/\00a0';
+        }
+
+        ul.breadcrumb li a
+        {
+            color: #a00009;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">
+    面包屑导航
+</h1>
+<hr>
+<ul class="breadcrumb">
+    <li><a href="#">首页</a> </li>
+    <li><a href="#">前端</a> </li>
+    <li><a href="#">后端</a> </li>
+    <li><a href="#">附录</a> </li>
+    <li><a href="#">关于</a> </li>
+</ul>
+</body>
+</html>

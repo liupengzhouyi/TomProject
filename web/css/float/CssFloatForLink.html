@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CssFloatForLink</title>
+    <style>
+        ul
+        {
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        a
+        {
+            float: left;
+            width: 6em;
+            /*取消下划线*/
+            text-decoration: none;
+            color: black;
+            background-color: #EAF2D3;
+            border-color: #4aff59;
+            border-right: 1px solid #000dff;
+            /*用多大的添充*/
+            padding: 2em 2em;
+        }
+
+        a:hover
+        {
+            background-color: red;
+        }
+
+        li
+        {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+    <li><a href="#">Link Four</a></li>
+</ul>
+</body>
+</html>
