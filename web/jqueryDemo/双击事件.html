@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双击事件</title>
+</head>
+<body>
+<p>
+    这是一个全新的事件
+</p>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("p").dblclick(function () {
+            $(this).hide();
+        });
+    });
+</script>
+</body>
+</html>

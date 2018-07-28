@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>捕获数据</title>
+</head>
+<body>
+<input type="text" id="text" value="内容">
+<button>显示</button>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            alert("值为： " + $("#text").val());
+        });
+    });
+</script>
+</body>
+</html>

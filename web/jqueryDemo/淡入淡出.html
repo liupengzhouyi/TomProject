@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淡入淡出</title>
+</head>
+<body>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+<br>
+<button id="abc">点击淡入 div 元素。</button>
+<button id="bcd">点击淡入 div 元素。</button>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#abc").click(function () {
+            $("#div1").fadeIn("slow");
+            $("#div2").fadeIn(3000);
+            $("#div3").fadeIn(3000);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#bcd").click(function() {
+            $("#div1").fadeOut(3000);
+            $("#div2").fadeOut(2000);
+            $("#div3").fadeOut(2000);
+        });
+    });
+</script>
+</body>
+</html>

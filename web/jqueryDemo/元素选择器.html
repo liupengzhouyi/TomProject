@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素选择器</title>
+</head>
+<body>
+    <h1 style="text-align: center">
+        这是一个标题
+    </h1>
+    <hr>
+    <p>
+        This is a profghtfi
+    </p>
+    <p>
+        This is aonther one.
+    </p>
+    <div style="text-align: center">
+        <button>
+            点击
+        </button>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            })
+        })
+    </script>
+</body>
+</html>

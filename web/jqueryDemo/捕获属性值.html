@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>捕获属性值</title>
+</head>
+<body>
+<p>
+    <a href="http://www.bing.com" id="abc">abc</a>
+</p>
+<button>
+    显示属性
+</button>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            alert($("#abc").attr("href"));
+        });
+    });
+</script>
+</body>
+</html>
