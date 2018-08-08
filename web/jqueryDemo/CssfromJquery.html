@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CssFromJquery</title>
+    <style type="text/css">
+        .important
+        {
+            font-size: xx-large;
+        }
+        .blue
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<p>
+    This is a important test.
+</p>
+<h1>
+    This text will get a kind of color!
+</h1>
+<button id="add">
+    Add elements class
+</button>
+<button id="remove">
+    Remove elements class
+</button>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $("button#add").click(function () {
+            $("p").addClass("important");
+            $("h1").addClass("blue");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("button#remove").click(function () {
+            $("p").removeClass("important");
+            $("h1").removeClass("blue");
+        });
+    });
+</script>
+</body>
+</html>
