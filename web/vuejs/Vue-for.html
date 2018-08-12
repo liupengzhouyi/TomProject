@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-for</title>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <!--<li v-for="site in sites">
+            {{ site.name }}
+        </li>-->
+        <template v-for="site in sites">
+            <li>{{ site.name }}</li>
+            <li>------------</li>
+        </template>
+    </ol>
+</div>
+<script src="vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            sites: [
+                {name: 'Runoob'},
+                {name: 'Google'},
+                {name: 'Taobao'}
+            ]
+        }
+    })
+</script>
+</body>
+</html>

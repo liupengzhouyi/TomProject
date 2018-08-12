@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React State</title>
+    <script src="https://cdn.bootcss.com/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    //Add the class
+    class Clock extends React.Component {
+        //Add a class constructor to initialize the state
+        constructor(props) {
+            super(props);
+            this.state = {date: new Date()};
+        }
+        //Use This.state in the render () method to modify the current time
+        render() {
+            return (
+                <div>
+                    <h1>
+                        Hello,World!
+                    </h1>
+                    <h2>
+                        New Is {this.state.date.toLocaleTimeString()}.
+                    </h2>
+                </div>
+            );
+        }
+    }
+    ReactDOM.render(
+        <Clock/>,
+        document.getElementById('example')
+    );
+</script>
+</body>
+</html>
