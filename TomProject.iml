@@ -19,9 +19,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Java EE 6-Java EE 6 (2)" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.10" level="application_server_libraries" />
-    <orderEntry type="module-library">
+    <orderEntry type="library" exported="" name="Java EE 6-Java EE 6 (2)" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.10" level="application_server_libraries" />
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/commons-fileupload-1.3.3.jar!/" />
@@ -30,7 +30,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/commons-io-2.5.jar!/" />
@@ -39,7 +39,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/commons-lang3-3.6.jar!/" />
@@ -48,7 +48,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/freemarker-2.3.26-incubating.jar!/" />
@@ -57,7 +57,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/javassist-3.20.0-GA.jar!/" />
@@ -66,7 +66,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/javax.servlet-5.1.12.jar!/" />
@@ -75,7 +75,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/javax.servlet.jar!/" />
@@ -84,7 +84,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/javax.servlet.jsp.jar!/" />
@@ -93,7 +93,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/log4j-api-2.10.0.jar!/" />
@@ -102,16 +102,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://E:/jre/mysql-connector-java-5.1.29-bin.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/ognl-3.1.15.jar!/" />
@@ -120,7 +111,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/servlet-api.jar!/" />
@@ -129,10 +120,19 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/jre/struts2-core-2.5.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/jre/mysql-connector-java-5.1.39-bin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -16,8 +16,7 @@
 <body>
 <p>
     <%
-        out.println(new Date() + request.getAuthType());
-        out.println("Your IP Address Is " + request.getRemoteAddr());
+        out.println("Your IP Address Is :" + request.getRemoteAddr());
     %>
 </p>
 </body>

@@ -7,5 +7,30 @@
         <servlet-name>Servlet</servlet-name>
         <servlet-class>Servlet.Servlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/Servlet.Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>UploadServlet</display-name>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>Servlet.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/Servlet.UploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>UploadServlet1</display-name>
+        <servlet-name>UploadServlet1</servlet-name>
+        <servlet-class>TomcatTest.UploadServlet1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet1</servlet-name>
+        <url-pattern>/TomcatTest/UploadServlet1</url-pattern>
+    </servlet-mapping>
 
 </web-app>
